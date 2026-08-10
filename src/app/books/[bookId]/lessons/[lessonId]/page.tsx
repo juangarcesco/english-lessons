@@ -11,7 +11,7 @@ export default function LessonPage() {
   const params = useParams();
   const bookId = params.bookId;
   const lessonId = params.lessonId;
-  const [lesson, setLesson] = useState(null);
+  const [lesson, setLesson] = useState<Lesson | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

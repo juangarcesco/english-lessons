@@ -9,8 +9,8 @@ import { Book, Lesson } from '@/types';
 export default function LessonsPage() {
   const params = useParams();
   const bookId = params.bookId;
-  const [book, setBook] = useState(null);
-  const [lessons, setLessons] = useState(null);
+  const [book, setBook] = useState<Book | null>(null);
+  const [lessons, setLessons] = useState<Lesson[] | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

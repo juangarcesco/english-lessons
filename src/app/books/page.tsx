@@ -6,9 +6,9 @@ import { supabase } from '@/lib/supabase';
 import { Book } from '@/types';
 
 export default function BooksPage() {
-  const [books, setBooks] = useState(null);
+  const [books, setBooks] = useState<Book[] | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetchBooks();
