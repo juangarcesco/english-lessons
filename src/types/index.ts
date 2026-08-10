@@ -1,7 +1,7 @@
 export interface Book {
   id: number;
   title: string;
-  level: 'INITIAL' | 'INTERMEDIATE' | 'ADVANCED';
+  level: string;
   description: string;
   created_at: string;
 }
@@ -16,8 +16,4 @@ export interface Lesson {
   audio_path: string | null;
   transcription: string | null;
   created_at: string;
-}
-
-export interface LessonWithBook extends Lesson {
-  book: Book;
 }

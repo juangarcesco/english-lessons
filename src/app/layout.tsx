@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'English Lessons - Learn English Online',
-  description: 'Interactive English lessons with audio and images',
+  title: 'English Lessons',
+  description: 'Learn English interactively',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
